@@ -1,0 +1,17 @@
+{
+    "contents" : "Bleach_Names <- function(name) {\n    require(stringr)\n    name <- tolower(name)\n    name <- str_trim(name)\n    name <- str_replace_all(name, \"[[:punct:]]\", \" \")\n    \n    simpleCap <- function(x) {\n        s <- strsplit(x, \" \")[[1]]\n        paste(toupper(substring(s, 1,1)), substring(s, 2),\n              sep=\"\", collapse=\" \")\n    }\n    \n    sapply(name, simpleCap)\n}\n\n",
+    "created" : 1408663261059.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1726955668",
+    "id" : "6D40C6BE",
+    "lastKnownWriteTime" : 1408663271,
+    "path" : "C:/Users/chthompson/Desktop/RStudio Projects/data_bleaching_tools/R/Bleach_Names.R",
+    "project_path" : "R/Bleach_Names.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
